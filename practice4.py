@@ -16,6 +16,9 @@ quotes = [
         "quote": "Always Have Fun"
     }
 ]
+@app.route('/')
+def home():
+    return "Welcome to the Quotes API. Use /message to interact."
 
 # Route to return all quotes (when you visit /message)
 @app.route('/message', methods=['GET'])
